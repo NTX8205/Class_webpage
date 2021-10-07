@@ -1,43 +1,97 @@
 ﻿<!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/classpage.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"><!--加入bootstrap 5(css)-->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-		crossorigin="anonymous"></script><!--加入bootstrap 5(js)-->
-	<title>個人頁面</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/classpage.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <!--加入bootstrap 5(css)-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+  <!--加入bootstrap 5(js)-->
+  <title>個人頁面</title>
 </head>
-<body style="background-color: aliceblue;">
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="./picture/uQxG_AXX_400x400.jpg" alt="Logo" class="logo rounded-pill"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-	  <span class="navbar-text"><h2 class="title">許哲睿的個人頁面</h2></span>
 
-      <div class="collapse navbar-collapse" id="navbarsExample04">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">其他</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown04">
-              <li><a class="dropdown-item" href="https://www.pu.edu.tw/">靜宜大學</a></li>
-              <li><a class="dropdown-item" href="./webpage/aboutme.html">關於我</a></li>
-              <li><a class="dropdown-item" href="./webpage/my_class.html">課表</a></li>
-            </ul>
-          </li>
-        </ul>
+<body style="background-color: aliceblue">
+  <main>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./picture/uQxG_AXX_400x400.jpg" alt="Logo"
+            class="logo rounded-pill" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+          aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <span class="navbar-text">
+          <h2 class="title">許哲睿的個人頁面</h2>
+        </span>
+
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown"
+                aria-expanded="false">其他</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                <li>
+                  <a class="dropdown-item" href="https://www.pu.edu.tw/">靜宜大學</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./webpage/aboutme.html">關於我</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./webpage/my_class.html">課表</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-		
-		<div class="embed-responsive embed-responsive-16by9"><!--影片嵌入練習-->
-			<iframe src="https://youtube.com/embed/wcLvGmDbCfY" allowfullscreen class="embed-responsive-item"></iframe>
-		</div>
+    </nav>
 
+    <footer class="
+          d-flex
+          flex-wrap
+          justify-content-between
+          align-items-center
+          py-3
+          my-4
+          border-top
+        ">
+      <p class="col-md-4 mb-0 text-muted">
+        Copyright © 許哲睿. All Rights Reserved.
+      </p>
+
+      <a href="/" class="
+            col-md-4
+            d-flex
+            align-items-center
+            justify-content-center
+            mb-3 mb-md-0
+            me-md-auto
+            link-dark
+            text-decoration-none
+          ">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item">
+          <a href="https://www.pu.edu.tw/" class="nav-link px-2 text-muted">靜宜大學</a>
+        </li>
+        <li class="nav-item">
+          <a href="./webpage/aboutme.html" class="nav-link px-2 text-muted">關於我</a>
+        </li>
+        <li class="nav-item">
+          <a href="./webpage/my_class.html" class="nav-link px-2 text-muted">課表</a>
+        </li>
+      </ul>
+    </footer>
+  </main>
 </body>
+
 </html>
