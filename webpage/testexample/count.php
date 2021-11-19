@@ -12,4 +12,6 @@ echo fread($file,filesize("./other/count.txt"));
 
 
 fclose($file);
+
+
 ?>
