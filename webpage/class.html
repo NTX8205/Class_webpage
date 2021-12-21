@@ -1,0 +1,1146 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>靜宜大學課程架構地圖</title>
+<!--[if lt IE 7]>
+<script type="text/javascript" src="../lib/IE7.js">IE7_PNG_SUFFIX=".png";</script>
+<![endif]-->
+<!--[if IE ]>
+<script type="text/javascript" src="../lib/DoPrint.js"></script>
+<![endif]-->
+
+<!--<script type="text/javascript" src="../lib/jquery-1.5.1.min.js"></script>-->
+<script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="../js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<script src="../js/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script><!--各種UI套件-->
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#btn_print").click(function(){
+		alert('建議用橫式列印');
+		if($.browser.msie){
+			DoPrint();
+		}else{
+			window.print();
+		}		
+	});	
+		
+ 	$(".note_sp").tooltip({
+			track: true,
+			show: {
+			effect: "slideDown",
+			delay: 100
+		  },
+		  hide: {
+			delay: 0
+		  }	,
+		   content: function() {
+               return $(this).attr('title');
+          }	 
+	});
+});
+</script>
+<style type="text/css">
+<!--
+@import url(../css/reset.css);
+@import url(../css/style.css);
+@import url(../css/jquery-ui-1.12.1/jquery-ui.min.css);
+
+body { 
+	overflow-x: hidden;
+	background-color: #fff;
+}
+#content {
+	height: auto;
+	background-color: #fff;
+	display: block;
+	/*overflow: hidden;*/
+	padding: 0px;
+}
+table {
+	border: 1px solid #FFF;
+}
+th {
+	border: 1px solid #FFF;
+	text-align: left;
+	background-color: #369;
+	color: #FFF;
+	padding: 5px;
+}
+td {
+	text-align: left;
+	border: 1px solid #FFF;
+	padding: 5px;
+}
+
+.note_sp{
+		 cursor:pointer;
+}
+ .ui-tooltip {
+	padding-left:15px;
+	font-family: "微軟正黑體", "文鼎細黑", "華康細黑體", "全真細圓體", Arial, Helvetica, sans-serif, "新細明體";
+	font-size: 10px;
+	font-weight: normal;
+	color: #333;
+	min-width: 200px;
+  }
+
+.group_color_A1{
+	background-color: rgb( 170, 250,120);
+}
+.group_color_A2{
+	background-color: rgb( 180, 250,130);
+}
+.group_color_A3{
+	background-color: rgb( 190, 250,140);
+}
+.group_color_A4{
+	background-color: rgb( 200, 250,150);
+}
+.group_color_A5{
+	background-color: rgb( 210, 250,160);
+}
+.group_color_A6{
+	background-color: rgb( 220, 250,170);
+}
+.group_color_A7{
+	background-color: rgb( 230, 250,180);
+}
+.group_color_A8{
+	background-color: rgb( 220, 250,170);
+}
+.group_color_A9{
+	background-color: rgb( 210, 250,160);
+}
+.group_color_A10{
+	background-color: rgb( 200, 250,150);
+}
+.group_color_A11{
+	background-color: rgb( 190, 250,140);
+}
+.group_color_A12{
+	background-color: rgb( 180, 250,130);
+}
+.group_color_A13{
+	background-color: rgb( 170, 250,120);
+}
+.group_color_A14{
+	background-color: rgb( 160, 250,110);
+}
+.group_color_A15{
+	background-color: rgb( 150, 250,100);
+}
+.group_color_A16{
+	background-color: rgb( 140, 250,90);
+}
+.group_color_A17{
+	background-color: rgb( 130, 250,80);
+}
+.group_color_A18{
+	background-color: rgb( 120, 250,70);
+}
+.group_color_A19{
+	background-color: rgb( 110, 250,60);
+}
+.group_color_A20{
+	background-color: rgb( 100, 250,50);
+}
+	
+
+
+
+
+.group_color_B1{
+	background-color: rgb(250, 200, 100);
+}
+.group_color_B2{
+	background-color: rgb(250, 205, 120);
+}
+.group_color_B3{
+	background-color: rgb(250, 210, 140);
+}
+.group_color_B4{
+	background-color: rgb(250, 215, 160);
+}
+.group_color_B5{
+	background-color: rgb(250, 220, 180);
+}
+.group_color_B6{
+	background-color: rgb(250, 225, 170);
+}
+.group_color_B7{
+	background-color: rgb(250, 230, 160);
+}
+.group_color_B8{
+	background-color: rgb(250, 235, 150);
+}
+.group_color_B9{
+	background-color: rgb(250, 225, 140);
+}
+.group_color_B10{
+	background-color: rgb(250, 215, 130);
+}
+.group_color_B11{
+	background-color: rgb(250, 205, 120);
+}
+.group_color_B12{
+	background-color: rgb(250, 195, 110);
+}
+.group_color_B13{
+	background-color: rgb(250, 185, 100);
+}
+.group_color_B14{
+	background-color: rgb(250, 175, 90);
+}
+.group_color_B15{
+	background-color: rgb(250, 165, 80);
+}
+.group_color_B16{
+	background-color: rgb(250, 155, 70);
+}
+.group_color_B17{
+	background-color: rgb(250, 145, 60);
+}
+.group_color_B18{
+	background-color: rgb(250, 135, 50);
+}
+.group_color_B19{
+	background-color: rgb(250, 125, 40);
+}
+.group_color_B20{
+	background-color: rgb(250, 115, 30);
+}
+	
+	
+	
+.group_color_C1{
+	background-color: rgb(250, 150, 160);
+}
+.group_color_C2{
+	background-color: rgb(250, 160, 170);
+}
+.group_color_C3{
+	background-color: rgb(250, 170, 180);
+}
+.group_color_C4{
+	background-color: rgb(250, 180, 190);
+}
+.group_color_C5{
+	background-color: rgb(250, 190, 200);
+}
+.group_color_C6{
+	background-color: rgb(250, 200, 210);
+}
+.group_color_C7{
+	background-color: rgb(250, 210, 220);
+}
+.group_color_C8{
+	background-color: rgb(250, 220, 230);
+}
+.group_color_C9{
+	background-color: rgb(250, 210, 220);
+}
+.group_color_C10{
+	background-color: rgb(250, 200, 210);
+}
+.group_color_C11{
+	background-color: rgb(250, 190, 200);
+}
+.group_color_C12{
+	background-color: rgb(250, 180, 190);
+}
+.group_color_C13{
+	background-color: rgb(250, 170, 180);
+}
+.group_color_C14{
+	background-color: rgb(250, 160, 170);
+}
+.group_color_C15{
+	background-color: rgb(250, 150, 160);
+}
+.group_color_C16{
+	background-color: rgb(250, 140, 150);
+}
+.group_color_C17{
+	background-color: rgb(250, 130, 140);
+}
+.group_color_C18{
+	background-color: rgb(250, 120, 130);
+}
+.group_color_C19{
+	background-color: rgb(250, 110, 120);
+}
+.group_color_C20{
+	background-color: rgb(250, 100, 110);
+}
+	
+
+.group_color_D1{
+	background-color: rgb( 100, 180,250);
+}
+.group_color_D2{
+	background-color: rgb( 110, 185,250);
+}
+.group_color_D3{
+	background-color: rgb( 120, 190,250);
+}
+.group_color_D4{
+	background-color: rgb( 130, 195,250);
+}
+.group_color_D5{
+	background-color: rgb( 140, 200,250);
+}
+.group_color_D6{
+	background-color: rgb( 150, 205,250);
+}
+.group_color_D7{
+	background-color: rgb( 160, 210,250);
+}
+.group_color_D8{
+	background-color: rgb( 170, 215,250);
+}
+.group_color_D9{
+	background-color: rgb( 165, 220,250);
+}
+.group_color_D10{
+	background-color: rgb( 160, 225,250);
+}
+.group_color_D11{
+	background-color: rgb( 155, 230,250);
+}
+.group_color_D12{
+	background-color: rgb( 150, 235,250);
+}
+.group_color_D13{
+	background-color: rgb( 145, 240,250);
+}
+.group_color_D14{
+	background-color: rgb( 140, 245,250);
+}
+.group_color_D15{
+	background-color: rgb( 135, 250,250);
+}
+.group_color_D16{
+	background-color: rgb( 130, 255,250);
+}
+.group_color_D17{
+	background-color: rgb( 125, 245,250);
+}
+.group_color_D18{
+	background-color: rgb( 120, 235,250);
+}
+.group_color_D19{
+	background-color: rgb( 115, 225,250);
+}
+.group_color_D20{
+	background-color: rgb( 110, 215,250);
+}
+	
+
+
+#titlebar{
+	display:none;
+}
+@media print {
+#wrapper {
+	background-color: #fff;
+	overflow: visible;
+}
+#selectbar{
+	display:none;
+}	
+#content {
+	height: auto;
+	background-color: #fff;
+	display: block;
+	overflow: visible;
+	padding: 10px;
+}
+table {
+	border: 1px solid #999;
+}
+th {
+	border: 1px solid #CCC;
+	text-align: left;
+	background-color: #CCC;
+	color: #039;
+	padding: 5px;
+}
+tr {
+	border: 1px solid #CCC;
+}
+td {
+	text-align: left;
+	border: 1px solid #CCC;
+	padding: 5px;
+}
+#titlebar{
+	display:block;
+	color:#000;
+	text-align: center;
+	margin:0px auto;
+}
+.printBtn{
+	display:none;
+}
+}
+
+-->
+</style>
+</head>
+
+<body style="background-color: rgb(255, 255, 255); padding-bottom: 50px;" marginwidth="0" marginheight="0">
+	
+    <h1 class="w14_CC6600" id="titlebar">
+        靜宜大學資管系(Computer Science and Information Management)大學部(Bachelor)不分組(N/A)109學年度課程架構圖(
+    一般生)
+        </h1>    
+    
+<div id="content">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w12_000">
+  <tbody><tr>
+    <th colspan="2" rowspan="2" width="10%">課群別(Categories of Courses)</th>
+    <th colspan="2">第一學年(First Academic Year)[109]</th>
+    <th colspan="2">第二學年(Second Academic Year)[110]</th>
+    <th colspan="2">第三學年(Third Academic Year)[111]</th>
+    <th colspan="2">第四學年(Forth Academic Year)[112]</th>
+    <th rowspan="2" width="10%">說明(Note)&nbsp;&nbsp;<input id="btn_print" name="print" type="button" value="列印(print)" class="printBtn"></th>
+    </tr>
+  <tr>
+    <th width="10%">上學期(First Semester)</th>
+    <th width="10%">下學期(Second Semester)</th>
+    <th width="10%">上學期(First Semester)</th>
+    <th width="10%">下學期(Second Semester)</th>
+    <th width="10%">上學期(First Semester)</th>
+    <th width="10%">下學期(Second Semester)</th>
+    <th width="10%">上學期(First Semester)</th>
+    <th width="10%">下學期(Second Semester)</th>
+  </tr>
+      
+  	  
+  <tr class="group_color_A1">
+  	    <th width="2%" rowspan="5" style="padding-left:10px"><span style=" -webkit-writing-mode:vertical-rl; writing-mode:tb-rl; ">校訂課程<br>(Courses required by the university)</span></th>
+        
+    	        	<td valign="top" style=" font-weight:bolder;">基本學術能力課程</td>
+			                <td valign="top">
+                <span style=" font-weight:bolder;">英文(一)</span><span style="color:#336699">(2)[必][單]</span><br><span style=" font-weight:bolder;">閱讀與書寫(一)</span><span style="color:#336699">(2)[必][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">英文(二)</span><span style="color:#336699">(2)[必][單]</span><br><span style=" font-weight:bolder;">閱讀與書寫(二)</span><span style="color:#336699">(2)[必][單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                        <td valign="top">各科目成績須及格。</td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_A2">
+  	    
+    	        	<td valign="top" style=" font-weight:bolder;">通識涵養課程</td>
+			                <td valign="top">
+                <span title="一年級上學期修習4學分。" style=" font-weight:bolder; text-decoration:underline; cursor:pointer;">通識核心必修課程(一)</span><span style="color:#336699">(4)[必][單]</span>                </td>
+                            <td valign="top">
+                <span title="一年級下學期修習4學分。" style=" font-weight:bolder; text-decoration:underline; cursor:pointer;">通識核心必修課程(一)</span><span style="color:#336699">(4)[必][單]</span>                </td>
+                            <td valign="top">
+                <span title="二年級上學期修習2學分。" style=" font-weight:bolder; text-decoration:underline; cursor:pointer;">通識核心必修課程(二)</span><span style="color:#336699">(2)[必][單]</span>                </td>
+                            <td valign="top">
+                <span title="二年級下學期修習2學分。" style=" font-weight:bolder; text-decoration:underline; cursor:pointer;">通識核心必修課程(二)</span><span style="color:#336699">(2)[必][單]</span>                </td>
+                            <td valign="top">
+                <span title="三年級上學期修習2學分。" style=" font-weight:bolder; text-decoration:underline; cursor:pointer;">通識多元選修課程(三)</span><span style="color:#336699">(2)[必][單]</span>                </td>
+                            <td valign="top">
+                <span title="三年級下學期修習2學分。" style=" font-weight:bolder; text-decoration:underline; cursor:pointer;">通識多元選修課程(三)</span><span style="color:#336699">(2)[必][單]</span>                </td>
+                            <td valign="top">
+                <span title="四年級上或下學期修習2學分。" style=" font-weight:bolder; text-decoration:underline; cursor:pointer;">通識多元選修課程(四)</span><span style="color:#336699">(2)[必][單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                        <td valign="top">通識涵養課程共分六大學群，應修得十八學分。於一、二年級各學群所開設之通識核心課程各應修得一門，共應修得十二學分，超過十二學分，則不予列計通識及畢業學分；另六學分可在各學群於三、四年級開設之通識多元選修課程自由修得，各學群如下：一、生命與生態環境學群二、宗教與哲學思維學群三、數理與科學技術學群四、社會與公共秩序學群五、文學與美感經驗學群六、台灣與世界文化學群。修習課程前，請務必參閱<a href="https://gec.pu.edu.tw/p/406-1051-20765,r30.php?Lang=zh-tw" target="_blank">各系不採計通識涵養學分之課程一覽表</a>。<br>
+<a href="https://gec.pu.edu.tw/p/404-1051-19512.php?Lang=zh-tw&amp;Sn=14" target="_blank">102-109學年度學生通識涵養課程重補修規定</a>。</td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_A3">
+  	    
+    	        	<td valign="top" style=" font-weight:bolder;">體育課程</td>
+			                <td valign="top">
+                <span style=" font-weight:bolder;">基礎體育(運動與健康)</span><span style="color:#336699">(1)[必][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">基礎體育(基礎游泳)</span><span style="color:#336699">(1)[必][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">二年級體育必修課程</span><span style="color:#336699">(1)[必][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">二年級體育必修課程</span><span style="color:#336699">(1)[必][單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                        <td valign="top">一、二年級課程，每學期1學分。</td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_A4">
+  	    
+    	        	<td valign="top" style=" font-weight:bolder;">服務學習課程</td>
+			                <td valign="top">
+                <span title="隨班上或下學期開設。" style=" font-weight:bolder; text-decoration:underline; cursor:pointer;">設計思考與實踐</span><span style="color:#336699">(1)[必][單]<span class="note_sp" style="color:#C00; font-weight:bold;" title="109學年度(含)前修習「(特色)服務學習」或「設計思考與實踐」課程未及格之學生，因應本校課程革新緣故，學生「不須」重、補修本課程。">(異)</span></span>                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                        <td valign="top">109學年度起(特色)服務學習課程轉型為設計思考與實踐課程，單學期課程，1學分。外籍生、轉學生及提高編級生不需補修。108學年度(含)前(特色)服務學習課程不及格者，須重(補)修設計思考與實踐課程及格始可通過。</td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_A5">
+  	    
+    	        	<td valign="top" style=" font-weight:bolder;">人文素養課程</td>
+			                <td valign="top">
+                <span style=" font-weight:bolder;">人文素養</span><span style="color:#336699">(0)[必][單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                        <td valign="top">「人文素養」課程規劃以四大系列、8項學習項次(計10個認證章)來統合同學在人文素養課程中應具備之認知與情意，自大一入學開始並於畢業前修習完成，轉學生不需補修。請參閱<a href="http://www.cge.pu.edu.tw/riki1/riki.php?id=人文素養&amp;CID=1" target="_blank">人文素養</a>相關網頁。</td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  	  
+  <tr class="group_color_B1">
+  	    <th width="2%" rowspan="2" style="padding-left:10px"><span style=" -webkit-writing-mode:vertical-rl; writing-mode:tb-rl; ">專業必修課程<br>(Courses required by the department)</span></th>
+        
+    	        	<td valign="top" style=" font-weight:bolder;">資院共同必修</td>
+			                <td valign="top">
+                <span style=" font-weight:bolder;">計算機概論(一)</span><span style="color:#336699">(2)[必][單]</span><br><span style=" font-weight:bolder;">程式設計(二)</span><span style="color:#336699">(1)[必][單]<span class="note_sp" style="color:#C00; font-weight:bold;" title="110學年度起停開； 重補修方式：需至少修滿程式設計課程4學分 。取得「程式設計(一)」1學分者補修「程式設計」、「進階程式設計」；取得「程式設計(二)」或「程式設計(三)」學分者；補修「進階程式設計」。">(異)</span></span><br><span style=" font-weight:bolder;">程式設計(一)</span><span style="color:#336699">(1)[必][單]<span class="note_sp" style="color:#C00; font-weight:bold;" title="110學年度起停開； 重補修方式：需至少修滿程式設計課程4學分 。取得「程式設計(一)」1學分者補修「程式設計」、「進階程式設計」；取得「程式設計(二)」或「程式設計(三)」學分者；補修「進階程式設計」。">(異)</span></span><br><span style=" font-weight:bolder;">專業英文導讀(一)</span><span style="color:#336699">(1)[必][單]<span class="note_sp" style="color:#C00; font-weight:bold;" title="110學年度起改選修。">(異)</span></span><br><span style=" font-weight:bolder;">資訊數學(一)</span><span style="color:#336699">(2)[必][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">計算機概論(二)</span><span style="color:#336699">(2)[必][單]</span><br><span style=" font-weight:bolder;">程式設計(三)</span><span style="color:#336699">(1)[必][單]<span class="note_sp" style="color:#C00; font-weight:bold;" title="110學年度起停開； 重補修方式：需至少修滿程式設計課程4學分 。取得「程式設計(一)」1學分者補修「程式設計」、「進階程式設計」；取得「程式設計(二)」或「程式設計(三)」學分者；補修「進階程式設計」。">(異)</span></span><br><span style=" font-weight:bolder;">程式設計(四)</span><span style="color:#336699">(1)[必][單]<span class="note_sp" style="color:#C00; font-weight:bold;" title="110學年度起停開； 重補修方式：需至少修滿程式設計課程4學分 。取得「程式設計(一)」1學分者補修「程式設計」、「進階程式設計」；取得「程式設計(二)」或「程式設計(三)」學分者；補修「進階程式設計」。">(異)</span></span><br><span style=" font-weight:bolder;">專業英文導讀(二)</span><span style="color:#336699">(1)[必][單]<span class="note_sp" style="color:#C00; font-weight:bold;" title="110學年度起改選修。">(異)</span></span><br><span style=" font-weight:bolder;">資訊數學(二)</span><span style="color:#336699">(2)[必][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">資料結構</span><span style="color:#336699">(3)[必][單]</span><br><span style=" font-weight:bolder;">網路通訊概論</span><span style="color:#336699">(3)[必][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">生涯規劃及職場倫理講座</span><span style="color:#336699">(1)[必][單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">作業系統</span><span style="color:#336699">(3)[必][單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                        <td valign="top">資管、資工、資傳三系共同必修科目</td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_B2">
+  	    
+    	        	<td valign="top" style=" font-weight:bolder;">系專業必修</td>
+			                <td valign="top">
+                <span style=" font-weight:bolder;">經濟學</span><span style="color:#336699">(3)[必][單]</span><br><span style=" font-weight:bolder;">管理學</span><span style="color:#336699">(3)[必][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">會計學</span><span style="color:#336699">(3)[必][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">統計學(一)</span><span style="color:#336699">(3)[必][單]</span><br><span style=" font-weight:bolder;">資訊管理導論</span><span style="color:#336699">(3)[必][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">統計學(二)</span><span style="color:#336699">(3)[必][單]</span><br><span style=" font-weight:bolder;">資料庫管理</span><span style="color:#336699">(3)[必][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">系統分析與設計</span><span style="color:#336699">(3)[必][單]</span><br><span style=" font-weight:bolder;">軟體設計與開發</span><span style="color:#336699">(3)[必][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">作業研究</span><span style="color:#336699">(3)[必][單]</span><br><span style=" font-weight:bolder;">專案實作(一)</span><span style="color:#336699">(2)[必][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">專案實作(二)</span><span style="color:#336699">(2)[必][單]</span><br><span style=" font-weight:bolder;">資管生涯講座</span><span style="color:#336699">(1)[必][單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                        <td valign="top">含院共同必修，必修專業科目共計59學分，課程交替，請參閱<a href="http://www.csim.pu.edu.tw/course/super_pages.php?ID=course1&amp;Sn=40" target="_blank">「課程交替說明」</a>。</td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  	  
+  <tr class="group_color_C1">
+  	    <th width="2%" rowspan="15" style="padding-left:10px"><span style=" -webkit-writing-mode:vertical-rl; writing-mode:tb-rl; ">專業選修課程<br>(Elective courses of the department)</span></th>
+        
+    	        	<td valign="top" style=" font-weight:bolder;">必選課程</td>
+			                <td valign="top">
+                                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">計算機應用與實務</span><span style="color:#336699">(2)<span style="color:#c30; font-weight:bold;">&lt;選&gt;</span>[單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                        <td valign="top">畢業前至少修習乙次；「計算機應用與實務」轉學(系)生免修。</td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_C2">
+  	    
+    	        	<td valign="top" style=" font-weight:bolder;">院選修</td>
+			                <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">企業實習(一)</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                        <td valign="top"></td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_C3">
+  	    
+    	        	<td valign="top" style=" font-weight:bolder;">不分組</td>
+			                <td valign="top">
+                <span style=" font-weight:bolder;">資訊入門(一)</span><span style="color:#336699">(1)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">C語言程式設計</span><span style="color:#336699">(2)[選][單]</span><br><span style=" font-weight:bolder;">資訊入門(二)</span><span style="color:#336699">(1)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">物聯網概論</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">Python 程式設計</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">物聯網無線通訊技術與應用</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                        <td valign="top"></td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_C4">
+  	    
+    	        	<td valign="top" style=" font-weight:bolder;">企業資源規劃課群</td>
+			                <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">企業資源規劃</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">供應鏈管理</span><span style="color:#336699">(3)[選][單]</span><br><span style=" font-weight:bolder;">企業資源規劃實務</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">ABAP程式設計</span><span style="color:#336699">(3)[選][單]</span><br><span style=" font-weight:bolder;">運籌管理資訊系統</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">人力資源管理系統</span><span style="color:#336699">(3)[選][單]</span><br><span style=" font-weight:bolder;">財務會計資訊系統</span><span style="color:#336699">(3)[選][單]</span><br><span style=" font-weight:bolder;">企業資源規劃系統實務</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">顧客關係管理</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                        <td valign="top">欲取得「企業資源規劃學程」， 詳請參閱<a href="https://goo.gl/5Pdpsc" target="_blank">「學程專區」</a></td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_C5">
+  	    
+    	        	<td valign="top" style=" font-weight:bolder;">資訊軟體課群</td>
+			                <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">動態網頁設計</span><span style="color:#336699">(3)[選][單]</span><br><span style=" font-weight:bolder;">網頁前端程式設計</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">進階資料結構</span><span style="color:#336699">(3)[選][單]</span><br><span style=" font-weight:bolder;">行動應用軟體開發</span><span style="color:#336699">(3)[選][單]</span><br><span style=" font-weight:bolder;">資訊軟體實作</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">程式語言</span><span style="color:#336699">(3)[選][單]</span><br><span style=" font-weight:bolder;">網路程式設計</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">演算法概論</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                        <td valign="top">欲取得【資訊軟體學程】， 詳請參閱<a href="https://goo.gl/CKIw6q" target="_blank">「學程專區」</a></td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_C6">
+  	    
+    	        	<td valign="top" style=" font-weight:bolder;">院訂跨領域實務課群-行動商務</td>
+			                <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">網路行銷</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">行動電子商務</span><span style="color:#336699">(3)[選][單]</span><br><span style=" font-weight:bolder;">iOS APP實務設計</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">資料庫系統實作</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">雲端技術與應用</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                        <td valign="top">至少取得9學分；「行動應用軟體開發」/「iOS APP實務設計」二者擇一認列。</td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_C7">
+  	    
+    	        	<td valign="top" style=" font-weight:bolder;">院訂跨領域實務課群-智慧資料分析</td>
+			                <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">人工智慧</span><span style="color:#336699">(3)[選][單]</span><br><span style=" font-weight:bolder;">商業智慧與資料倉儲</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">資料挖掘概論</span><span style="color:#336699">(3)[選][單]</span><br><span style=" font-weight:bolder;">Python應用實務 </span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">大數據分析</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">專案管理</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                        <td valign="top">至少取得9學分；「資料挖掘概論」/「大數據分析」二者擇一認列。</td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_C8">
+  	    
+    	        	<td valign="top" style=" font-weight:bolder;">院訂跨領域實務課群-物聯網應用</td>
+			                <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">互動式設計入門</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">互動式微控原理與應用</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">行動物聯網</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">嵌入式微控制器與物聯網實作</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">數位系統與設計</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                        <td valign="top">至少須取得9學分，方具資格</td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_C9">
+  	    
+    	        	<td valign="top" style=" font-weight:bolder;">院定跨領實務課群-人工智慧</td>
+			                <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">智慧醫療</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">深度學習</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">智慧製造 </span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">機器學習</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                        <td valign="top">【人工智慧】3學分，列計此課群科目</td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_C10">
+  	    
+    	        	<td valign="top" style=" font-weight:bolder;">院訂跨領域實務課群-網路管理</td>
+			                <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">計算機網路</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">系統與網路管理</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">網路安全</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">網路通訊協定</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                        <td valign="top">至少須取得9學分，方具資格</td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_C11">
+  	    
+    	        	<td valign="top" style=" font-weight:bolder;">院訂跨領域實務課群-行動軟體</td>
+			                <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">人機介面與使用者經驗設計</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">行動應用軟體開發</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">進階行動應用軟體開發</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">網站系統實作</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                        <td valign="top">至少須取得9學分，方具資格；「行動應用軟體開發」3學分，列計此課群科目</td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_C12">
+  	    
+    	        	<td valign="top" style=" font-weight:bolder;">院訂跨領域實務課群-文創動漫設計</td>
+			                <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">數位特效與影像美學</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">數位插畫與動態繪本創作</span><span style="color:#336699">(3)[選][單]</span><br><span style=" font-weight:bolder;">當代動漫美學與文化</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">影視媒介與當代流行文化</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                        <td valign="top">至少須取得9學分，方具資格</td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_C13">
+  	    
+    	        	<td valign="top" style=" font-weight:bolder;">院訂跨領域實務課群-資訊安全</td>
+			                <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">資訊安全概論</span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">資訊安全管理 </span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">安全程式設計 </span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">系統安全 </span><span style="color:#336699">(3)[選][單]</span>                </td>
+                            <td valign="top">
+                                </td>
+                        <td valign="top">至少取得9學分。</td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_C14">
+  	    
+    	        	<td valign="top" style=" font-weight:bolder;">院訂跨領域實務課群-企業實習</td>
+			                <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                <span style=" font-weight:bolder;">企業實習(三)</span><span style="color:#336699">(9)[選][單]</span>                </td>
+                        <td valign="top">1.至少須取得9學分，方具資格
+2.此課程開在產業學院，修習通過之學分數列計於本系畢業學分</td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_C15">
+  	    
+    	        	<td valign="top" style=" font-weight:bolder;">院訂跨領域實務課群-寰宇學習</td>
+			                <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                        <td valign="top">至少須取得9學分,大一(下)開放申請'、大二安排輔導、	大三～大四期間出國交換</td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  	  
+  <tr class="group_color_D1">
+  	    <th width="2%" rowspan="1" style="padding-left:10px"><span style=" -webkit-writing-mode:vertical-rl; writing-mode:tb-rl; ">外系課程<br>(Courses from other departments)</span></th>
+        
+    	        	<td valign="top" style=" font-weight:bolder;">(不分課群)</td>
+			                <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                            <td valign="top">
+                                </td>
+                        <td valign="top">修習他系所得學分可列計本系畢業學分之上限為12學分，科目不限 （除「資訊應用概論」、「程式設計概論」外）；資訊學院各系所開之課程，列入本系課程學分。</td>
+                
+        
+        
+        
+        
+    </tr>
+    
+  	  
+  <tr class="group_color_E1">
+  	    <th width="2%" rowspan="5" style="padding-left:10px"><span style=" -webkit-writing-mode:vertical-rl; writing-mode:tb-rl; ">其他畢業條件<br>(Other Graduation requirements)</span></th>
+        
+    	        	<td style="background-color:#ccc; font-weight:bolder;">校訂英文能力</td>
+        	<td colspan="9" style="background-color:#ccc">1.<a href="https://s.yam.com/Dkm3g" target="_blank">靜宜大學校訂英文能力畢業條件標準表</a>所列之英文能力檢定測驗(以下稱英檢)。達其分數等級者，始取得校訂英文能力畢業條件。未達畢業條件者，須於畢業前修得大一英文4 學分及外語教學中心開設之「選修英語」課程4 學分。他系學生修畢英文系輔系或雙主修者，視同通過校訂英文能力畢業條件。<br>2.「選修英語」課程如為補救未通過英檢之學分者，不計入畢業學分(亦不列入外系學分)。<br>3.修習外語教學中心所開各類「選修英語」課程之相關規定，請參閱<a href="https://s.yam.com/VBMpP" target="_blank">「英文能力畢業條件配套措施實施要點」</a>。</td>
+        
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_E2">
+  	    
+    	        	<td style="background-color:#ccc; font-weight:bolder;">程式能力</td>
+        	<td colspan="9" style="background-color:#ccc">畢業之前須通過以下情形之一：
+1.	校內程式設計能力檢定單次答對3題以上。
+2.	CPE單次答對2題以上。
+3.	校內程式設計能力檢定單次答對2題或CPE單次答對1題或ITSA單次答對3題以上，累計達2次。
+4.	相當程度之其他檢定測驗。(Oracle Certified Java Programmer（OCJP）、ITE資訊專業人員鑑定－程式設計語言－C++)
+5.     取得「靜宜大學專業證照獎勵辦法」之<a href="http://www1.pu.edu.tw/~srwang/cci-license.pdf" target="_blank">「資訊學院專業證照分級表」</a> A級證照一張或B級證照二張(含)以上。（109.09.30教務會議通過）
+6. 	ITSA單次答對5題以上。(ITSA 相關認定於110.04.20教務會議通過)</td>
+        
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_E3">
+  	    
+    	        	<td style="background-color:#ccc; font-weight:bolder;">證照</td>
+        	<td colspan="9" style="background-color:#ccc">此區檢核「程式能力」5. 取得「靜宜大學專業證照獎勵辦法」之專業證照分級表(資訊學院)A級證照一張或B級證照二張.. ；通過者等同取得「程式能力」畢業條件。(以下資料為各級證照）</td>
+        
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_E4">
+  	    
+    	        	<td style="background-color:#ccc; font-weight:bolder;">學程</td>
+        	<td colspan="9" style="background-color:#ccc">須取得「資訊軟體」、「企業資源規劃」(必修企業資源規劃)二學程中的一個學程，每學程至少須取得18學分。請參閱<a href="http://alcat.pu.edu.tw/2009programarea/index.php" target="_blank">「學程專區」</a>
+**專業必修、學程、實務課群若有相同科目，僅能擇一認列，除【系統分析與設計】外 (110.06.15系課程修訂)。。</td>
+        
+        
+        
+        
+        
+    </tr>
+    
+  <tr class="group_color_E5">
+  	    
+    	        	<td style="background-color:#ccc; font-weight:bolder;">相關領域課程</td>
+        	<td colspan="9" style="background-color:#ccc">須取得一個院訂跨領域實務課群，實務課群取得為9學分。課群名稱及科目請參閱<a href="http://www1.pu.edu.tw/~srwang/course_group-109.pdf" target="_blank">「實務課群」</a>。
+**全校共同必修「資訊應用概論」(2學分)、「程式設計概論」(1學分)，不列計本系畢業學分。</td>
+        
+        
+        
+        
+        
+    </tr>
+    
+  	  
+    </tbody></table>
+
+<span class="w13_333" style=" font-weight:bolder; padding:5px; display:block;width:100%; height:20px; background-color: #FCC; line-height:20px;">總學分(Total credits)：132</span>
+
+
+	
+  </div>  <!--content-->
+<div class="w13_333" style=" font-weight:bolder; padding:5px; display:block;width:100%; height:auto; background-color:#CFC; line-height:20px;">
+科目異動說明(Change description of courses):<br>
+設計思考與實踐(DESIGN THINKING AND PRACTICE
+)：109學年度(含)前修習「(特色)服務學習」或「設計思考與實踐」課程未及格之學生，因應本校課程革新緣故，學生「不須」重、補修本課程。<br>程式設計(二)(COMPUTER PROGRAMMING (2))：110學年度起停開； 重補修方式：需至少修滿程式設計課程4學分 。取得「程式設計(一)」1學分者補修「程式設計」、「進階程式設計」；取得「程式設計(二)」或「程式設計(三)」學分者；補修「進階程式設計」。<br>程式設計(一)(COMPUTER PROGRAMMING(1))：110學年度起停開； 重補修方式：需至少修滿程式設計課程4學分 。取得「程式設計(一)」1學分者補修「程式設計」、「進階程式設計」；取得「程式設計(二)」或「程式設計(三)」學分者；補修「進階程式設計」。<br>專業英文導讀(一)(PROFESSIONAL ENGLISH READING1)：110學年度起改選修。<br>程式設計(三)(COMPUTER PROGRAMMING (3))：110學年度起停開； 重補修方式：需至少修滿程式設計課程4學分 。取得「程式設計(一)」1學分者補修「程式設計」、「進階程式設計」；取得「程式設計(二)」或「程式設計(三)」學分者；補修「進階程式設計」。<br>程式設計(四)(COMPUTER PROGRAMMING (4))：110學年度起停開； 重補修方式：需至少修滿程式設計課程4學分 。取得「程式設計(一)」1學分者補修「程式設計」、「進階程式設計」；取得「程式設計(二)」或「程式設計(三)」學分者；補修「進階程式設計」。<br>專業英文導讀(二)(PROFESSIONAL ENGLISH READING 2
+)：110學年度起改選修。<br></div>
+<div class="w13_333" style=" font-weight:bolder; padding:5px; display:block;width:100%; height:auto; background-color:#FFC; line-height:20px;">
+圖示說明:<br>
+1.科目名稱<span style="color:#069;">有底線</span>:滑鼠放在該課程科目上會<span style="color:#069;">顯示說明備註</span>(Course name with underline：the instruction will be showed when mouse is placed in the course name.)<br>
+2.科目名稱<span style="color:#069;">(數字)</span>:該課程科目<span style="color:#069;">學分數</span>(Course name (with number)：the number is the course credits.)<br>
+3.科目名稱<span style="color:#069;">[必/選]&lt;選&gt;</span>:該課程科目為<span style="color:#069;">[必修][選修]</span><span style="color:#c30; font-weight:bold;">&lt;必選&gt;</span>(Course name[required/elective]<elective>:the course is [required course][elective course]/&lt;the course must be studied once&gt;)<br>
+4.科目名稱<span style="color:#069;">[單/全]</span>:該課程科目為<span style="color:#069;">[單學期][全學年]</span>(Course name[semester/year]：the course is [semester course][year course])<br>
+5.科目名稱<span style="color:#069;">(異)</span>:請參考科目異動說明(Course name(changed)：refer to the change description of the course below courses structure)<br>
+<br>
+
+</elective></div>
+
+
+
+
+  
+
+
+
+<div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body></html>
