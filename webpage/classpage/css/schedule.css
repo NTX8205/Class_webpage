@@ -1,0 +1,52 @@
+﻿td.content {
+    font-size: 0.3cm;
+    width: 2.4cm;
+    height: 1.2cm;
+    vertical-align: middle;
+}
+
+p.title {
+    font-size: 0.8cm;
+    font-family: 標楷體;
+}
+
+body {
+    background-color: lightgray;
+}
+
+table.main {
+    width: 19.6cm;
+    border: 2;
+}
+
+.head {
+    width: 16.8cm;
+    border: 0;
+}
+
+td {
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    width: 2.8cm;
+}
+
+table {
+    margin: auto;
+    padding: auto;
+}
+
+.under {
+    margin: auto;
+    padding: auto;
+    text-indent: 7.3cm;
+    list-style-position: inside;
+}
+iframe{
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: auto;
+}
