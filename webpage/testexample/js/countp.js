@@ -1,7 +1,9 @@
 $(document).ready(function () {
+
     $.getJSON("./other/count_v1.json", function(data){
-        data.count+=1;
-        $("#count").html(data.count);
+
+        var new_count=data.count+1;
+        $("#count").html(new_count);
         console.log(data.count); // Prints: Harry
     }).fail(function(){
         console.log("An error has occurred.");
