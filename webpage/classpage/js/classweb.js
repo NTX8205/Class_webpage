@@ -21,14 +21,18 @@ $(document).ready(function(){
 
     $("#classpage").click(function(){
         var page =document.getElementById("classpage").value;
-        if(page=="110-1"){
-            document.getElementById("myIframe").src="../classpage/years/110-1.html"
+
+        if(page=="csim"){
+            document.getElementById("myIframe").src="../classpage/class.html";
+        }
+        else if(page=="110-1"){
+            document.getElementById("myIframe").src="../classpage/years/110-1.html";
         }
         else if(page=="110-2"){
-             document.getElementById("myIframe").src="../classpage/years/110-2.html"
+             document.getElementById("myIframe").src="../classpage/years/110-2.html";
         }
         else{
-            document.getElementById("myIframe").src=" "
+            document.getElementById("myIframe").src=" ";
         }
     });
 });
