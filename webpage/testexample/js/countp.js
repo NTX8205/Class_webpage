@@ -4,7 +4,7 @@ $(document).ready(function () {
 
         var new_count=data.count+1;
         $("#count").html(new_count);
-        console.log(data.count); // Prints: Harry
+        console.log(data.count); 
     }).fail(function(){
         console.log("An error has occurred.");
     }); 
