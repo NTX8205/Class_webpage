@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" />
+    <title>Ch10-6</title>
+    <script type="text/javascript">
+        function MultiplicationTable() {
+        document.write("<h3 style='text-align: center; background-color: green;'>資管二B/410928050/許哲睿</h3>")
+        document.write("<table border='1' width= '60%' style='text-align: center; background-color: yellow; margin: auto; padding: auto;'>")
+        document.write("<caption style='text-align: center;'>9*9乘法表</caption>")
+        for (var i = 1; i <= 9; i++) {
+            document.write("<tr>")
+            for (var j = 1; j <= 9; j++) {
+                document.write("<td>" + i + "*" + j + "=" + i * j + "</td>")
+            }
+            document.write("</tr>")
+            }
+        }
+    </script>
+    <style type="text/css">
+        h3
+        {
+            text-align: center;
+            background-color: yellow;
+        }
+    </style>
+    </head>
+    <body onload="MultiplicationTable()">
+
+    </body>
+</html>

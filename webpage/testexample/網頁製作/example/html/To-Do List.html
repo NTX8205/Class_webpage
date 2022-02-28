@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        <title>待辦事項</title>
+
+        <style>
+            .main {
+                margin-top: 30px;
+            }
+
+            .listTitle {
+                margin-top: 60px;
+                text-align: center;
+            }
+
+            .list {
+                margin-top: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">待辦清單</a>
+        </nav>
+        <div class="container main">
+            <div>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="輸入待辦事項" id="thing" name="thing" value="">
+                    <div class="input-group-append">
+                        <button id="add" class="btn btn-primary">新增</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listTitle">
+                <h2>待辦事項</h2>
+            </div>
+
+            <div class="list card">
+                <ul class="list-group" id="list">
+
+                </ul>
+            </div>
+        </div>
+
+        <script>
+            var input = document.getElementById("thing");
+            var list = document.getElementById("list");
+            var index = 0;
+
+            document.getElementById("add").addEventListener("click", function () {
+                index += 1;
+                var li = document.createElement('li');
+                li.setAttribute("class", "list-group-item");
+                var text = input.value;
+                li.innerHTML = index + ".  " + text;
+                list.appendChild(li);
+            });
+        </script>
+    </body>
+
+</html>
