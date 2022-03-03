@@ -1,43 +1,43 @@
 ﻿td.content {
-    font-size: 0.3cm;
-    width: 2.4cm;
-    height: 1.2cm;
-    vertical-align: middle;
+  font-size: 0.3cm;
+  width: 2.4cm;
+  height: 1.2cm;
+  vertical-align: middle;
 }
 
 p.title {
-    font-size: 0.8cm;
-    font-family: 標楷體;
+  font-size: 0.8cm;
+  font-family: 標楷體;
 }
 
 body {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 table.main {
-    width: 19.6cm;
-    border: 2;
+  width: 19.6cm;
+  border: 2;
 }
 
 .head {
-    width: 16.8cm;
-    border: 0;
+  width: 16.8cm;
+  border: 0;
 }
 
 td {
-    text-align: center;
+  text-align: center;
 }
 
 .content {
-    text-align: center;
-    width: 2.8cm;
+  text-align: center;
+  width: 2.8cm;
 }
 
 table {
-    margin: auto;
-    padding: auto;
+  margin: auto;
+  padding: auto;
 }
 
-div.under{
-    width: 19.6cm;
+div.under {
+  width: 19.6cm;
 }
