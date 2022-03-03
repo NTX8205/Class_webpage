@@ -14,10 +14,10 @@ $(document).ready(function(){
             document.getElementById("myIframe").src="../classpage/class.html";
         }
         else if(page=="110-1"){
-            document.getElementById("myIframe").src="../classpage/years(pc)/110-1.html";
+            document.getElementById("myIframe").src ="../classpage/years_pc/110-1.html";
         }
         else if(page=="110-2"){
-            document.getElementById("myIframe").src="../classpage/years(pc)/110-2.html";
+            document.getElementById("myIframe").src="../classpage/years_pc/110-2.html";
         }
         else{
             document.getElementById("myIframe").src=" ";
